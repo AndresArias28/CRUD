@@ -15,7 +15,7 @@ import java.util.List;
 //heradamos los metodos de la interfaz CRUD, por ser interfaz se debe implemntar todos los metodos que tiene
 public class PersonaDAO implements CRUD{
     Coneccion objConeccion = new Coneccion();
-    Connection con;
+    Connection coneccion;
     PreparedStatement pst;
     ResultSet rs;
     Persona p = new Persona();
@@ -26,8 +26,8 @@ public class PersonaDAO implements CRUD{
         String sql = "Select * from persona";
         
         try{
-            con = objConeccion.getConnection();//obtengo el objeto conexion de la clase Coneccion  y la paso a un objeto de tipo Conection
-            pst = con.prepareStatement(sql);//objeto(pst) le asigno u nmetodo que envia paramatros sql
+            coneccion = objConeccion.getConnection();//obtengo el objeto conexion de la clase Coneccion  y la paso a un objeto de tipo Conection
+            pst = coneccion.prepareStatement(sql);//mediante el objeto coneccion
             rs = pst.executeQuery();//objeto rs se asigna la ejecucion de la peticion sql
             while(rs.next()){//mientras la peticion siga ejecuntandose, es decir que encuentre el siguiente objeto en la BD
                 Persona per = new Persona();
@@ -49,8 +49,8 @@ public class PersonaDAO implements CRUD{
        String sql = "Select * from persona where ID = "+id;
         
         try{
-            con = objConeccion.getConnection();//obtengo el objeto conexion de la clase Coneccion  y la paso a un objeto de tipo Conection
-            pst = con.prepareStatement(sql);//objeto(pst) le asigno u nmetodo que envia paramatros sql
+            coneccion = objConeccion.getConnection();//obtengo el objeto conexion de la clase Coneccion  y la paso a un objeto de tipo Conection
+            pst = coneccion.prepareStatement(sql);//objeto(pst) le asigno u nmetodo que envia paramatros sql
             rs = pst.executeQuery();//objeto rs se asigna la ejecucion de la peticion sql
             while(rs.next()){//mientras la peticion siga ejecuntandose, es decir que encuentre el siguiente objeto en la BD
                 //Persona per = new Persona();
@@ -71,8 +71,8 @@ public class PersonaDAO implements CRUD{
     public boolean add(Persona per) {
        String sql="insert into persona(CedulaPersona,NombrePersona)values('"+per.getDni()+"','"+per.getNombre()+"')";
        try{
-           con = objConeccion.getConnection();
-           pst = con.prepareStatement(sql);
+           coneccion = objConeccion.getConnection();
+           pst = coneccion.prepareStatement(sql);
            pst.executeUpdate();
            
        }catch(Exception e){
@@ -85,8 +85,8 @@ public class PersonaDAO implements CRUD{
     public boolean edit(Persona per) {
       String sql="UPDATE persona SET CedulaPersona='"+per.getDni()+"', NombrePersona='"+per.getNombre()+"' WHERE ID = "+per.getId();
         try {
-            con = objConeccion.getConnection();
-            pst=con.prepareStatement(sql);
+            coneccion = objConeccion.getConnection();
+            pst=coneccion.prepareStatement(sql);
             pst.executeUpdate();
         } catch (Exception e) {
             System.out.println("execpion de tipo:" +e);
@@ -98,8 +98,8 @@ public class PersonaDAO implements CRUD{
     public boolean eliminar(int id) {
         String sql = "delete from persona where ID = "+id;
         try {
-            con = objConeccion.getConnection();
-            pst = con.prepareStatement(sql);
+            coneccion = objConeccion.getConnection();
+            pst = coneccion.prepareStatement(sql);
             pst.executeUpdate();
         } catch (Exception e) {
             System.out.println("error de tipo: "+e);

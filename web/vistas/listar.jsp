@@ -28,17 +28,17 @@
                         </thead>
                         <%
                             PersonaDAO dao = new PersonaDAO();
-                            List<Persona> list = dao.listar(); //creo una lista de tipo persona y le asigno la lista de tipo persona que viene de DAO con todos los datos del modelo
-                            Iterator<Persona> iter = list.iterator(); //creo un objeto iterador de tipo persona. sirve para recorrer estrucuturas
+                            List<Persona> list = dao.listar(); //llamar el metodo listar() y asiganarlo(la lista de personas) en list
+                            Iterator<Persona> iter = list.iterator(); //creo un objeto iterador de tipo persona. sirve para recorrer estructuras
                             Persona per = null;
 
-                            while (iter.hasNext()) {
-                                per = iter.next();
+                            while (iter.hasNext()) { //mientras encuntre un  elemento siguiente en el itereador haga esto
+                                per = iter.next(); //le paso cada persona del iterador al modelo
 
                         %>
                         <tbody>
                             <tr>
-                                <td><%= per.getId()%></td>
+                                <td><%= per.getId()%></td> 
                                 <td><%= per.getDni()%></td>
                                 <td><%= per.getNombre()%></td>
                                 <td>
