@@ -21,7 +21,9 @@
             <small class="text-muted">Vamos a Programar¡¡</small>
         </h3>
        
-            <p class="h4"><a href="Controlador?accion=listar">Listar <a/></p>
+            <p class="h4"><a href="Controlador?accion=listar">Listar Personas <a/></p>
+            
+            <p class="h4"><a href="Controlador?accion=listar">Listar Usuarios del sistema <a/></p>
 
           
 

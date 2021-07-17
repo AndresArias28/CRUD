@@ -38,7 +38,7 @@ public class Controlador extends HttpServlet {
         }else{
            
             //JOptionPane.showMessageDialog(null, "Usuario o contraseña in correctos, intenta de nuevo");
-            request.setAttribute("ObjetoEnviar", respuesta);
+            //request.setAttribute("ObjetoEnviar", respuesta);
             acceso=index;
         }
         RequestDispatcher vista = request.getRequestDispatcher(acceso);
@@ -64,7 +64,7 @@ public class Controlador extends HttpServlet {
             per.setNombre(nombre);
             perDao.add(per);
             acceso = listar;
-        } else if (action.equalsIgnoreCase("editar")) {                           //si doy click en editar, 
+        } else if (action.equalsIgnoreCase("editar")) {                          
 
             request.setAttribute("IDpersona", request.getParameter("id"));//enviar el id de la persona para poder capturarlo en la vista
             acceso = edit;

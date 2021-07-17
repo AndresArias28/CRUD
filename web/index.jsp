@@ -46,11 +46,12 @@
 
                     <form action="Controlador" method="post">
                         <input type="text" name="user" placeholder="Username" required="required" />
-                        <input type="password" name="pass" placeholder="Password" required="required" />
-                        <button type="submit" name="Entrar"  value="Entrar" class="btn btn-primary btn-block btn-large">Let me in.</button>
+                        <input type="password" name="pass" placeholder="Psword" required="required" />
+                        <button type="submit" name="Entrar"  value="Entrar" class="btn btn-primary btn-block btn-large">Entrar.</button>
                     </form>
                 </div>
             </div>
         </div>
+        <% %>
     </body>
 </html>

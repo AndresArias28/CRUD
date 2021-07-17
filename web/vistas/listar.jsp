@@ -32,8 +32,8 @@
                             Iterator<Persona> iter = list.iterator(); //creo un objeto iterador de tipo persona. sirve para recorrer estructuras
                             Persona per = null;
 
-                            while (iter.hasNext()) { //mientras encuntre un  elemento siguiente en el itereador haga esto
-                                per = iter.next(); //le paso cada persona del iterador al modelo
+                            while (iter.hasNext()) { //mientras encuntre un  elemento siguiente en el itereador continue ejecuntadose
+                                per = iter.next(); //le paso cada persona siguiente que encuentra en el objeto iterador al objeto persona
 
                         %>
                         <tbody>
