@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/web/vistas/listaIndex.jsp</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/Controlador/Controlador.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/Modelo/Usuario.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/Config/Coneccion.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/Interfaces/CRUD.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/web/vistas/add.jsp</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/Modelo/Persona.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/ModeloDAO/PersonaDAO.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/src/java/ModeloDAO/UsuarioDAO.java</file>
-            <file>file:/E:/JAVA%20-%20ALL/JAVA%20web/CRUD/JavawebCRUD/web/vistas/listar.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
